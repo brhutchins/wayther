@@ -3,7 +3,7 @@ module Main where
 import qualified Data.ByteString.Lazy.Char8 as LB8 (putStrLn)
 
 import           Weather
-import           Config (config)
+import           LocalConfig (config)
 
 main :: IO ()
 main = do

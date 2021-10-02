@@ -1,0 +1,34 @@
+name: wayther
+author: "Barnaby Hutchins"
+maintainer: "bhutchins@gmail.com"
+version: 0.1.0.0
+github: brhutchins/wayther
+license: MIT
+
+extra-source-files:
+  - README.md
+
+default-extensions:
+  - DeriveAnyClass
+  - DeriveGeneric
+  - OverloadedStrings
+
+dependencies:
+  - aeson
+  - base
+  - bytestring
+  - containers
+  - http-conduit
+  - mr-env
+  - text
+
+library:
+  source-dirs:
+    - src
+
+executables:
+  wayther:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+      - wayther

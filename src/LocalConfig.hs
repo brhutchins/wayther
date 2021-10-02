@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings, DeriveGeneric, DeriveAnyClass, RecordWildCards #-}
 
-module Config where
+module LocalConfig where
 
 import           Data.Text (Text)
 import           Data.Aeson

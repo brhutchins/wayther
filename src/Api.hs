@@ -2,7 +2,7 @@
 
 module Api where
 
-import           Config
+import           LocalConfig
 import           Data.Text (Text)
 import qualified Data.Text as T
 

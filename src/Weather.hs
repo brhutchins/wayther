@@ -11,7 +11,7 @@ import           Data.Aeson
 import           Network.HTTP.Simple
 
 import           Weather.Data
-import qualified Config
+import qualified LocalConfig as Config
 import qualified Api
 
 weatherError :: Text -> WeatherError
