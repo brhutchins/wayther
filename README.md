@@ -1,5 +1,5 @@
 # Wayther
-A weather bar module for [Waybar](https://github.com/Alexays/Waybar) (or any status bar that supports JSON data), using data from the [OpenWeatherMap](https://openweathermap.org/) API.
+A weather module for [Waybar](https://github.com/Alexays/Waybar) (or any status bar that supports JSON data), using data from the [OpenWeatherMap](https://openweathermap.org/) API.
 
 Wayther is written in Haskell[*](#haskell), and uses the Aeson library to parse JSON data from the OpenWeatherMap API.
 
