@@ -2,9 +2,11 @@
 
 module Weather.Data where
 
-import Data.Text (Text)
-import Data.Aeson
-import GHC.Generics
+import           Data.Text (Text)
+import           Data.Aeson
+import           GHC.Generics
+import           Data.Map (Map)
+import qualified Data.Map as Map
 
 data Weather
   = Weather
@@ -72,3 +74,25 @@ instance ToJSON WeatherError where
     object [ "text"    .= errorDisplay
            , "tooltip" .= errorDetails
            ]
+
+weatherIcons :: Map Text Text
+weatherIcons = Map.fromList
+  [ ("01d", "🌞")
+  , ("01n", "🌑")
+  , ("02d", "🌥")
+  , ("02n", "☁")
+  , ("03d", "☁")
+  , ("03n", "☁")
+  , ("04d", "☁")
+  , ("04n", "☁")
+  , ("09d", "🌧")
+  , ("09n", "🌧")
+  , ("10d", "🌦")
+  , ("10n", "🌧")
+  , ("11d", "⛈")
+  , ("11n", "⛈")
+  , ("13d", "❄")
+  , ("13n", "❄")
+  , ("50d", "🌫")
+  , ("50n", "🌫")
+  ]

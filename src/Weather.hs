@@ -4,7 +4,6 @@ module Weather where
 
 import           Data.Text (Text)
 import qualified Data.Text as T
-import           Data.Map (Map)
 import qualified Data.Map as Map
 import qualified Data.ByteString.Lazy.Internal as LB
 import           Data.Aeson
@@ -20,28 +19,6 @@ weatherError err =
     { errorDisplay = "🚫"
     , errorDetails = err
     }
-
-weatherIcons :: Map Text Text
-weatherIcons = Map.fromList
-  [ ("01d", "🌞")
-  , ("01n", "🌑")
-  , ("02d", "🌥")
-  , ("02n", "☁")
-  , ("03d", "☁")
-  , ("03n", "☁")
-  , ("04d", "☁")
-  , ("04n", "☁")
-  , ("09d", "🌧")
-  , ("09n", "🌧")
-  , ("10d", "🌦")
-  , ("10n", "🌧")
-  , ("11d", "⛈")
-  , ("11n", "⛈")
-  , ("13d", "❄")
-  , ("13n", "❄")
-  , ("50d", "🌫")
-  , ("50n", "🌫")
-  ]
 
 weatherInfo :: IO (Either String Config.Config) -> IO (Either String WeatherData)
 weatherInfo config = do
