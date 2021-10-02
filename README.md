@@ -58,4 +58,4 @@ Run as a custom type in Waybar (e.g., `custom/weather`). Setup in Waybar config 
   - There's a lot more to get out of the API, and making use of that was pretty much the whole point
   
 ## Haskell
-Couldn't this have been written much more easily in Python? Uh huh. With the right API, `jq` would have probably been able to do the job. But everyone needs -- everyone ✨*deserves*✨ --* a monadic, type-safe weather bar module.  
+Couldn't this have been written much more easily in Python? Uh huh. With the right API, `jq` would have probably been able to do the job. But everyone needs – everyone ✨*deserves*✨ – a monadic, type-safe weather bar module.
