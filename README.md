@@ -1,7 +1,7 @@
 # wayther
 A weather bar module for [Waybar](https://github.com/Alexays/Waybar) (or any status bar that supports JSON data), using data from the [OpenWeatherMap](https://openweathermap.org/) API.
 
-Wayther is written in Haskell, and uses the Aeson library to parse JSON data from the OpenWeatherMap API.
+Wayther is written in Haskell[*](#haskell), and uses the Aeson library to parse JSON data from the OpenWeatherMap API.
 
 ## Building
 Build dependencies are managed with Nix. If you're using direnv, just `direnv allow` the directory. Otherwise, run `nix-shell`. The `pure` flag is only necessary if you already have Haskell/Cabal installed, in which case the local packages can end up getting overridden by the global ones.
@@ -52,3 +52,10 @@ Run as a custom type in Waybar (e.g., `custom/weather`). Setup in Waybar config 
 }
 ```
 
+## To do
+- [ ] Add a Fahrenheit option
+- [ ] Add more information in the tooltip
+  - There's a lot more to get out of the API, and making use of that was pretty much the whole point
+  
+## Haskell
+Couldn't this have been written much more easily in Python? Uh huh. With the right API, `jq` would have probably been able to do the job. But everyone needs -- everyone ✨*deserves*✨ --* a monadic, type-safe weather bar module.  
