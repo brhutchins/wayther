@@ -4,7 +4,7 @@ A weather bar module for [Waybar](https://github.com/Alexays/Waybar) (or any sta
 Wayther is written in Haskell, and uses the Aeson library to parse JSON data from the OpenWeatherMap API.
 
 ## Building
-Build dependencies are managed with Nix. If you're using direnv, just `direnv allow` the directory. Otherwise, run `nix-shell`. The `pure` flag is only necessary if you already have Haskell/Cabal installed, in which case the local packages can get overridden by the global ones.
+Build dependencies are managed with Nix. If you're using direnv, just `direnv allow` the directory. Otherwise, run `nix-shell`. The `pure` flag is only necessary if you already have Haskell/Cabal installed, in which case the local packages can end up getting overridden by the global ones.
 
 ``` sh
 nix-shell --pure
