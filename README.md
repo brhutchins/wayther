@@ -4,7 +4,7 @@ A weather bar module for [Waybar](https://github.com/Alexays/Waybar) (or any sta
 Wayther is written in Haskell[*](#haskell), and uses the Aeson library to parse JSON data from the OpenWeatherMap API.
 
 ## Building
-Build dependencies are managed with Nix. If you're using direnv, just `direnv allow` the directory. Otherwise, run `nix-shell`. The `pure` flag is only necessary if you already have Haskell/Cabal installed, in which case the local packages can end up getting overridden by the global ones.
+Build dependencies are managed with [Nix](https://nixos.org/). If you're using direnv, just `direnv allow` the directory. Otherwise, run `nix-shell`. The `pure` flag is only necessary if you already have Haskell/Cabal installed, in which case the local packages can end up getting overridden by the global ones.
 
 ``` sh
 nix-shell --pure
@@ -59,4 +59,4 @@ Run as a custom type in Waybar (e.g., `custom/weather`). Setup in Waybar config 
 - [ ] Use `geoclue2` to get location automatically
   
 ## Haskell
-Couldn't this have been written much more easily in, say, Python? Uh huh. With the right API, `jq` would have probably been able to do the job. But everyone needs – everyone ✨*deserves*✨ – a monadic, type-safe weather bar module.
+Couldn't this have been written much more easily in, say, Python? Uh huh. With the right API, `jq` would have probably been able to do the job. But everyone ✨*deserves*✨ a monadic, type-safe weather bar module.
