@@ -14,5 +14,6 @@ mkShell {
   buildInputs = project.env.nativeBuildInputs ++ [
     haskellPackages.cabal-install
     haskell-language-server
+    hpack
   ];
 }
