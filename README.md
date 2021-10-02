@@ -4,7 +4,7 @@ A weather bar module for [Waybar](https://github.com/Alexays/Waybar) (or any sta
 Wayther is written in Haskell, and uses the Aeson library to parse JSON data from the OpenWeatherMap API.
 
 ## Building
-Build dependencies are managed with Nix. If you're using nix-direnv, just `direnv allow` the directory. Otherwise, run `nix-shell`. The `pure` flag is only necessary if you already have Haskell/cabal installed.
+Build dependencies are managed with Nix. If you're using direnv, just `direnv allow` the directory. Otherwise, run `nix-shell`. The `pure` flag is only necessary if you already have Haskell/Cabal installed, in which case the local packages can get overridden by the global ones.
 
 ``` sh
 nix-shell --pure
@@ -22,7 +22,7 @@ Then build:
 cabal build
 ```
 
-The executable will be buried somewhere in the `dist-newstyle` directory tree, as is cabal's wont. Copy the `wayther` executable to somewhere like `~/.local/bin` (or wherever) to install it.
+The executable will be buried somewhere in the `dist-newstyle` directory tree, as is Cabal's wont. Copy the `wayther` executable to somewhere sensible, like `~/.local/bin`, to install it.
 
 ## Configuration
 Wayther looks in `$HOME/.config/` and `~/.config/` for `wayther/config.json`.
@@ -34,7 +34,7 @@ The config file has the following format:
     "api":
         {
             "api_key": "<OpenWeatherMap api key>",
-            "location": "<{city},{state},{country code}>",
+            "location": "<{city},{state},{country code}>"
         }
 }
 ```
