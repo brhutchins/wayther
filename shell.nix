@@ -10,7 +10,7 @@ in
 with pkgs;
 
 mkShell {
-  name = "weather-bar-module";
+  name = "wayther";
   buildInputs = project.env.nativeBuildInputs ++ [
     haskellPackages.cabal-install
     haskell-language-server
