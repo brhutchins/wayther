@@ -77,9 +77,6 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 
-### HPack ###
-*.cabal
-
 ### Linux ###
 
 # temporary files which can be created if a process still has a handle open of a deleted file
@@ -115,3 +112,9 @@ tags
 [._]*.un~
 
 # End of https://www.toptal.com/developers/gitignore/api/haskell,emacs,vim,linux
+
+### HPack ###
+*.cabal
+
+### direnv ###
+.direnv/
