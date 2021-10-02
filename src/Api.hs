@@ -7,7 +7,7 @@ import           Data.Text (Text)
 import qualified Data.Text as T
 
 type ApiUrl = String
--- It would be nice to contruct the API request
+-- It would be nice to construct the API request
 -- directly from the ApiUrlComponents data, rather
 -- than going via a String. But http-conduit makes
 -- accessing Request weirdly difficult (or I'm
