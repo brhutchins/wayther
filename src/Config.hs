@@ -37,7 +37,7 @@ configFilePath :: IO FilePath
 configFilePath = do
   home <- envAsString "HOME" "~/"
   pure $ home ++
-           "/.config/weather-bar-module/config.json"
+           "/.config/wayther/config.json"
 
 configFile :: IO B.ByteString
 configFile = do
